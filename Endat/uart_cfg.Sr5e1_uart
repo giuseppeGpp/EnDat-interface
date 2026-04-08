@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.st.stellar.component.sr5e1.uart:Sr5e1_uart xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.st.stellar.component.sr5e1.uart="http://com.st.stellar.component.sr5e1.uart" name="uart_cfg">
+  <configs name="uart_cfg1"/>
+</com.st.stellar.component.sr5e1.uart:Sr5e1_uart>

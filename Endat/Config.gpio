@@ -1,0 +1,54 @@
+
+PinSettings steval_ttm007a
+Board "STEVAL-TTM007A.gpio_board" version "2.0.0"
+
+GPIO {
+	inout GPIO4_3 -> E7_88 as PIN_GPIO4_3
+	IO
+		MODER3 = 'Output',
+		OT3 = 'PushPull',
+		OSPEEDR3 = 'Medium',
+		PUPDR3 = 'Floating',
+		AFRL3 = 0,
+		IHYSTR3 = 'CMOS',
+		TR3 = 'Disabled',
+		SFS3 = 'Disabled',
+		SFV3 = 'Low'
+	;
+	inout GPIO4_2 -> E7_87 as PIN_GPIO4_2
+	IO
+		MODER2 = 'Output',
+		OT2 = 'PushPull',
+		OSPEEDR2 = 'Medium',
+		PUPDR2 = 'Floating',
+		AFRL2 = 0,
+		IHYSTR2 = 'CMOS',
+		TR2 = 'Disabled',
+		SFS2 = 'Disabled',
+		SFV2 = 'Low'
+	;
+	inout GPIO4_1 -> E7_86 as PIN_GPIO4_1
+	IO
+		MODER1 = 'Output',
+		OT1 = 'PushPull',
+		OSPEEDR1 = 'Medium',
+		PUPDR1 = 'Floating',
+		AFRL1 = 0,
+		IHYSTR1 = 'CMOS',
+		TR1 = 'Disabled',
+		SFS1 = 'Disabled',
+		SFV1 = 'Low'
+	;
+	inout GPIO4_4 -> E7_89 as PIN_GPIO4_4
+	IO
+		MODER4 = 'Input',
+		OT4 = 'PushPull',
+		OSPEEDR4 = 'Medium',
+		PUPDR4 = 'Floating',
+		AFRL4 = 0,
+		IHYSTR4 = 'CMOS',
+		TR4 = 'Disabled',
+		SFS4 = 'Disabled',
+		SFV4 = 'Low'
+	;
+}

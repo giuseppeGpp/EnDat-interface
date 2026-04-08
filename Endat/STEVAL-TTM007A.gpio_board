@@ -1,0 +1,606 @@
+HardwareBoard steval_ttm007a
+include "platform:/plugin/com.st.stellar.model.lib/lib/SR5E1/SR5E1.gpio_def" version "2.0.0"
+package E7
+
+CAN1 {
+	in CAN1_RX -> E7_1 as CAN1_RX
+	IO
+		MODER4 = "Alternate",
+		OT4 = "PushPull",
+		OSPEEDR4 = "Low",
+		PUPDR4 = "Floating",
+		AFRL4 = "6",
+		IHYSTR4 = "CMOS",
+		TR4 = "Enable",
+		SFS4 = "Disabled",
+		SFV4 = "Low"
+	;
+	out CAN1_TX -> E7_2 as CAN1_TX
+	IO
+		MODER5 = 'Alternate',
+		OT5 = 'PushPull',
+		OSPEEDR5 = 'Low',
+		PUPDR5 = 'Floating',
+		AFRL5 = 6,
+		IHYSTR5 = 'CMOS',
+		TR5 = 'Disabled',
+		SFS5 = 'Disabled',
+		SFV5 = 'Low'
+	;
+}
+
+CAN2 {
+	in CAN2_RX -> E7_78 as CAN2_RX  
+	IO
+		MODER8 = "Alternate",
+		OT8 = "PushPull",
+		OSPEEDR8 = "Low",
+		PUPDR8 = "Floating",
+		AFRL8 = "6",
+		IHYSTR8 = "CMOS",
+		TR8 = "Enable",
+		SFS8 = "Disabled",
+		SFV8 = "Low"
+	;
+	out CAN2_TX -> E7_77 as CAN2_TX
+	IO
+		MODER7 = 'Alternate',
+		OT7 = 'PushPull',
+		OSPEEDR7 = 'Low',
+		PUPDR7 = 'Floating',
+		AFRL7 = 6,
+		IHYSTR7 = 'CMOS',
+		TR7 = 'Disabled',
+		SFS7 = 'Disabled',
+		SFV7 = 'Low'
+	;
+}
+
+SDADC1 {
+	in SDADC1_BSEXT -> E7_16 as SDADC1_IN0
+	IO
+		MODER13 = 'Alternate',
+		OT13 = 'PushPull',
+		OSPEEDR13 = 'Low',
+		PUPDR13 = 'Floating',
+		AFRL13 = 9,
+		IHYSTR13 = 'CMOS',
+		TR13 = 'Enable',
+		SFS13 = 'Disabled',
+		SFV13 = 'Low'
+	;
+
+}
+
+BDAC {
+	out BDAC_OUT1 -> E7_56 as B_DAC1_OUT
+	IO
+		MODER1 = 'Analog',
+		OT1 = 'PushPull',
+		OSPEEDR1 = 'Low',
+		PUPDR1 = 'Floating',
+		AFRL1 = 0,
+		IHYSTR1 = 'CMOS',
+		TR1 = 'Disabled',
+		SFS1 = 'Disabled',
+		SFV1 = 'Low'
+	;
+}
+
+SAR1 {
+	in SAR1_IN1 -> E7_20 as SAR1_IN1
+	IO
+		MODER2 = 'Analog',
+		OT2 = 'PushPull',
+		OSPEEDR2 = 'Low',
+		PUPDR2 = 'Floating',
+		AFRL2 = 0,
+		IHYSTR2 = 'CMOS',
+		TR2 = 'Disabled',
+		SFS2 = 'Disabled',
+		SFV2 = 'Low'
+	;
+}
+
+SAR2 {
+	in SAR2_IN1 -> E7_26 as SAR2_IN1
+	IO
+		MODER7 = 'Analog',
+		OT7 = 'PushPull',
+		OSPEEDR7 = 'Low',
+		PUPDR7 = 'Floating',
+		AFRL7 = 0,
+		IHYSTR7 = 'CMOS',
+		TR7 = 'Disabled',
+		SFS7 = 'Disabled',
+		SFV7 = 'Low'
+	;
+}
+
+SAR3 {
+	in SAR3_IN2 -> E7_32 as SAR3_IN2
+	IO
+		MODER13 = 'Analog',
+		OT13 = 'PushPull',
+		OSPEEDR13 = 'Low',
+		PUPDR13 = 'Floating',
+		AFRL13 = 0,
+		IHYSTR13 = 'CMOS',
+		TR13 = 'Disabled',
+		SFS13 = 'Disabled',
+		SFV13 = 'Low'
+	;
+}
+
+SAR {
+	in SAR_CAL1 -> E7_44 as SAR_CAL1
+	IO
+		MODER1 = 'Analog',
+		OT1 = 'PushPull',
+		OSPEEDR1 = 'Low',
+		PUPDR1 = 'Floating',
+		AFRL1 = 0,
+		IHYSTR1 = 'CMOS',
+		TR1 = 'Disabled',
+		SFS1 = 'Disabled',
+		SFV1 = 'Low'
+	;
+}
+
+SAR4 {
+	in SAR4_IN3 -> E7_48 as SAR4_IN3
+	IO
+		MODER6 = 'Analog',
+		OT6 = 'PushPull',
+		OSPEEDR6 = 'Low',
+		PUPDR6 = 'Floating',
+		AFRL6 = 0,
+		IHYSTR6 = 'CMOS',
+		TR6 = 'Disabled',
+		SFS6 = 'Disabled',
+		SFV6 = 'Low'
+	;
+}
+
+BDAC {
+	out BDAC_OUT2 -> E7_57 as B_DAC2_OUT
+	IO
+		MODER5 = 'Analog',
+		OT5 = 'PushPull',
+		OSPEEDR5 = 'Low',
+		PUPDR5 = 'Floating',
+		AFRL5 = 0,
+		IHYSTR5 = 'CMOS',
+		TR5 = 'Disabled',
+		SFS5 = 'Disabled',
+		SFV5 = 'Low'
+	;
+}
+
+SAR5 {
+	in SAR5_IN1 -> E7_51 as SAR5_IN1
+	IO
+		MODER9 = 'Analog',
+		OT9 = 'PushPull',
+		OSPEEDR9 = 'Low',
+		PUPDR9 = 'Floating',
+		AFRL9 = 0,
+		IHYSTR9 = 'CMOS',
+		TR9 = 'Disabled',
+		SFS9 = 'Disabled',
+		SFV9 = 'Low'
+	;
+	in SAR5_IN2 -> E7_52 as SAR5_IN2
+	IO
+		MODER10 = 'Analog',
+		OT10 = 'PushPull',
+		OSPEEDR10 = 'Low',
+		PUPDR10 = 'Floating',
+		AFRL10 = 0,
+		IHYSTR10 = 'CMOS',
+		TR10 = 'Disabled',
+		SFS10 = 'Disabled',
+		SFV10 = 'Low'
+	;
+	in SAR5_IN3 -> E7_53 as SAR5_IN3
+	IO
+		MODER11 = 'Analog',
+		OT11 = 'PushPull',
+		OSPEEDR11 = 'Low',
+		PUPDR11 = 'Floating',
+		AFRL11 = 0,
+		IHYSTR11 = 'CMOS',
+		TR11 = 'Disabled',
+		SFS11 = 'Disabled',
+		SFV11 = 'Low'
+	;
+}
+
+TIM1 {
+	out TIM1_PWM_CH1N -> E7_66 as TIM1_CH1N
+	IO
+		MODER14 = 'Alternate',
+		OT14 = 'PushPull',
+		OSPEEDR14 = 'High',
+		PUPDR14 = 'Floating',
+		AFRL14 = 4,
+		IHYSTR14 = 'CMOS',
+		TR14 = 'Disabled',
+		SFS14 = 'Disabled',
+		SFV14 = 'Low'
+	;
+	in TIM1_PWM_CH1 -> E7_67 as TIM1_CH1
+	IO
+		MODER15 = 'Alternate',
+		OT15 = 'PushPull',
+		OSPEEDR15 = 'High', 
+		PUPDR15 = 'Floating',
+		AFRL15 = 4,
+		IHYSTR15 = 'CMOS',
+		TR15 = 'Disabled',
+		SFS15 = 'Disabled',
+		SFV15 = 'Low'
+	;
+	out TIM1_PWM_CH2N -> E7_69 as TIM1_CH2N
+	IO
+		MODER0 = 'Alternate',
+		OT0 = 'PushPull',
+		OSPEEDR0 = 'High',
+		PUPDR0 = 'Floating',
+		AFRL0 = 4,
+		IHYSTR0 = 'CMOS',
+		TR0 = 'Disabled',
+		SFS0 = 'Disabled',
+		SFV0 = 'Low'
+	;
+	in TIM1_PWM_CH2 -> E7_70 as TIM1_CH2
+	IO
+		MODER1 = 'Alternate',
+		OT1 = 'PushPull',
+		OSPEEDR1 = 'High',
+		PUPDR1 = 'Floating',
+		AFRL1 = 4,
+		IHYSTR1 = 'CMOS',
+		TR1 = 'Disabled',
+		SFS1 = 'Disabled',
+		SFV1 = 'Low'
+	;
+	in TIM1_PWM_BKIN -> E7_145 as TIM1_BKIN
+	IO
+		MODER0 = 'Alternate',
+		OT0 = 'PushPull',
+		OSPEEDR0 = 'Low',
+		PUPDR0 = 'Floating',
+		AFRL0 = 4,
+		IHYSTR0 = 'CMOS',
+		TR0 = 'Enable',
+		SFS0 = 'Disabled',
+		SFV0 = 'Low'
+	;
+	in TIM1_PWM_BKIN2 -> E7_146 as TIM1_BKIN2
+	IO
+		MODER1 = 'Alternate',
+		OT1 = 'PushPull',
+		OSPEEDR1 = 'Low',
+		PUPDR1 = 'Floating',
+		AFRL1 = 4,
+		IHYSTR1 = 'CMOS',
+		TR1 = 'Enable',
+		SFS1 = 'Disabled',
+		SFV1 = 'Low'
+	;	
+	out TIM1_PWM_CH3N -> E7_59 as TIM1_CH3N
+	IO
+		MODER3 = 'Alternate',
+		OT3 = 'PushPull',
+		OSPEEDR3 = 'High',
+		PUPDR3 = 'Floating',
+		AFRL3 = 4,
+		IHYSTR3 = 'CMOS',
+		TR3 = 'Disabled',
+		SFS3 = 'Disabled',
+		SFV3 = 'Low'
+	;
+	in TIM1_PWM_CH3 -> E7_60 as TIM1_CH3
+	IO
+		MODER4 = 'Alternate',
+		OT4 = 'PushPull',
+		OSPEEDR4 = 'High',
+		PUPDR4 = 'Floating',
+		AFRL4 = 4,
+		IHYSTR4 = 'CMOS',
+		TR4 = 'Disabled',
+		SFS4 = 'Disabled',
+		SFV4 = 'Low'
+	;
+}
+
+TIM8 {
+	out TIM8_PWM_CH1N -> E7_165 as TIM8_CH1N
+	IO
+		MODER1 = 'Alternate',
+		OT1 = 'PushPull',
+		OSPEEDR1 = 'High',
+		PUPDR1 = 'Floating',
+		AFRL1 = 4,
+		IHYSTR1 = 'CMOS',
+		TR1 = 'Disabled',
+		SFS1 = 'Disabled',
+		SFV1 = 'Low'
+	;
+	in TIM8_PWM_CH1 -> E7_164 as TIM8_CH1
+	IO
+		MODER0 = 'Alternate',
+		OT0 = 'PushPull',
+		OSPEEDR0 = 'High', 
+		PUPDR0 = 'Floating',
+		AFRL0 = 4,
+		IHYSTR0 = 'CMOS',
+		TR0 = 'Disabled',
+		SFS0 = 'Disabled',
+		SFV0 = 'Low'
+	;
+	out TIM8_PWM_CH2N -> E7_168 as TIM8_CH2N
+	IO
+		MODER3 = 'Alternate',
+		OT3 = 'PushPull',
+		OSPEEDR3 = 'High',
+		PUPDR3 = 'Floating',
+		AFRL3 = 4,
+		IHYSTR3 = 'CMOS',
+		TR3 = 'Disabled',
+		SFS3 = 'Disabled',
+		SFV3 = 'Low'
+	;
+	in TIM8_PWM_CH2 -> E7_167 as TIM8_CH2
+	IO
+		MODER2 = 'Alternate',
+		OT2 = 'PushPull',
+		OSPEEDR2 = 'High',
+		PUPDR2 = 'Floating',
+		AFRL2 = 4,
+		IHYSTR2 = 'CMOS',
+		TR2 = 'Disabled',
+		SFS2 = 'Disabled',
+		SFV2 = 'Low'
+	;
+	in TIM8_PWM_BKIN -> E7_174 as TIM8_BKIN
+	IO
+		MODER8 = 'Alternate',
+		OT8 = 'PushPull',
+		OSPEEDR8 = 'Low',
+		PUPDR8 = 'Floating',
+		AFRL8 = 4,
+		IHYSTR8 = 'CMOS',
+		TR8 = 'Enable',
+		SFS8 = 'Disabled',
+		SFV8 = 'Low'
+	;
+	in TIM8_PWM_BKIN2 -> E7_175 as TIM8_BKIN2
+	IO
+		MODER9 = 'Alternate',
+		OT9 = 'PushPull',
+		OSPEEDR9 = 'Low',
+		PUPDR9 = 'Floating',
+		AFRL9 = 4,
+		IHYSTR9 = 'CMOS',
+		TR9 = 'Enable',
+		SFS9 = 'Disabled',
+		SFV9 = 'Low'
+	;	
+	out TIM8_PWM_CH3N -> E7_170 as TIM8_CH3N
+	IO
+		MODER5 = 'Alternate',
+		OT5 = 'PushPull',
+		OSPEEDR5 = 'High',
+		PUPDR5 = 'Floating',
+		AFRL5 = 4,
+		IHYSTR5 = 'CMOS',
+		TR5 = 'Disabled',
+		SFS5 = 'Disabled',
+		SFV5 = 'Low'
+	;
+	in TIM8_PWM_CH3 -> E7_169 as TIM8_CH3
+	IO
+		MODER4 = 'Alternate',
+		OT4 = 'PushPull',
+		OSPEEDR4 = 'High',
+		PUPDR4 = 'Floating',
+		AFRL4 = 4,
+		IHYSTR4 = 'CMOS',
+		TR4 = 'Disabled',
+		SFS4 = 'Disabled',
+		SFV4 = 'Low'
+	;
+}
+
+SPI1 {
+	in SPI1_MOSI -> E7_73 as SPI1_MOSI
+	IO
+		MODER5 = "Alternate",
+		OT5 = "PushPull",
+		OSPEEDR5 = "High",
+		PUPDR5 = "Floating",
+		AFRL5 = "5",
+		IHYSTR5 = "CMOS",
+		TR5 = 'Enable',
+		SFS5 = "Disabled",
+		SFV5 = "Low"
+	;
+	in SPI1_MISO -> E7_74 as SPI1_MISO
+	IO
+		MODER6 = "Alternate",
+		OT6 = "PushPull",
+		OSPEEDR6 = "High",
+		PUPDR6 = "Floating",
+		AFRL6 = "5",
+		IHYSTR6 = "CMOS",
+		TR6 = "Enable",
+		SFS6 = "Disabled",
+		SFV6 = "Low"
+	;
+	out SPI1_SCK -> E7_75 as SPI1_SCK
+	IO
+		MODER7 = "Alternate",
+		OT7 = "PushPull",
+		OSPEEDR7 = "High",
+		PUPDR7 = "Floating",
+		AFRL7 = "5",
+		IHYSTR7 = "CMOS",
+		TR7 = "Enable",
+		SFS7 = "Disabled",
+		SFV7 = "Low"
+	;
+}
+
+
+SPI3 {
+	in SPI3_MOSI -> E7_81 as SPI3_MOSI
+	IO
+		MODER12 = "Alternate",
+		OT12 = "PushPull",
+		OSPEEDR12 = "High",
+		PUPDR12 = "Floating",
+		AFRL12 = "5",
+		IHYSTR12 = "CMOS",
+		TR12 = 'Enable',
+		SFS12 = "Disabled",
+		SFV12= "Low"
+	;
+	in SPI3_MISO -> E7_80 as SPI3_MISO
+	IO
+		MODER11 = "Alternate",
+		OT11 = "PushPull",
+		OSPEEDR11 = "High",
+		PUPDR11 = "Floating",
+		AFRL11 = "5",
+		IHYSTR11 = "CMOS",
+		TR11 = "Enable",
+		SFS11 = "Disabled",
+		SFV11 = "Low"
+	;
+	out SPI3_SCK -> E7_79 as SPI3_SCK
+	IO
+		MODER10 = "Alternate",
+		OT10 = "PushPull",
+		OSPEEDR10 = "High",
+		PUPDR10 = "Floating",
+		AFRL10 = "5",
+		IHYSTR10 = "CMOS",
+		TR10 = "Enable",
+		SFS10 = "Disabled",
+		SFV10 = "Low"
+	;
+	out SPI3_NSS -> E7_82 as SPI3_NSS
+	IO
+		MODER13 = "Alternate",
+		OT13 = "PushPull",
+		OSPEEDR13 = "High",
+		PUPDR13 = "Floating",
+		AFRL13 = "5",
+		IHYSTR13 = "CMOS",
+		TR13 = "Enable",
+		SFS13 = "Disabled",
+		SFV13 = "Low"
+	;	
+	
+}
+
+TIM3 {
+	in TIM3_CH1 -> E7_140 as TIM3_CH1
+	IO
+		MODER14 = "Alternate",
+		OT14 = "PushPull",
+		OSPEEDR14 = "Low",
+		PUPDR14 = "Floating",
+		AFRL14 = "2",
+		IHYSTR14 = "CMOS",
+		TR14 = "Enable",
+		SFS14 = "Disabled",
+		SFV14 = "Low"
+	;
+	in TIM3_CH2 -> E7_141 as TIM3_CH2
+	IO
+		MODER15 = "Alternate",
+		OT15 = "PushPull",
+		OSPEEDR15 = "Low",
+		PUPDR15 = "Floating",
+		AFRL15 = "2",
+		IHYSTR15 = "CMOS",
+		TR15 = "Enable",
+		SFS15 = "Disabled",
+		SFV15 = "Low"
+	;
+	
+}
+
+TIM2 {
+	in TIM2_CH1 -> E7_147 as TIM2_CH1
+	IO
+		MODER2 = "Alternate",
+		OT2 = "PushPull",
+		OSPEEDR2 = "Low",
+		PUPDR2 = "Floating",
+		AFRL2 = "1",
+		IHYSTR2 = "CMOS",
+		TR2 = "Enable",
+		SFS2 = "Disabled",
+		SFV2 = "Low"
+	;
+}
+
+GPIO {
+	inout GPIO7_12 -> E7_160 as USER_LED_1
+	IO
+		MODER12 = "Output",
+		OT12 = "PushPull",
+		OSPEEDR12 = "Low",
+		PUPDR12 = "Floating",
+		AFRL12 = "12",
+		IHYSTR12 = "CMOS",
+		TR12 = "Disabled",
+		SFS12 = "Disabled",
+		SFV12 = "Low"
+	;
+	inout GPIO7_13 -> E7_161 as USER_LED_2
+	IO
+		MODER13 = "Output",
+		OT13 = "PushPull",
+		OSPEEDR13 = "Low",
+		PUPDR13 = "Floating",
+		AFRL13 = "12",
+		IHYSTR13 = "CMOS",
+		TR13 = "Disabled",
+		SFS13 = "Disabled",
+		SFV13 = "Low"
+	;
+}
+
+UART3 {
+	/* UART3_RX is configured as TX as workaround for an hw issue on EVBE7000S */
+	in UART3_RX -> E7_162 as UART3_RX
+	IO
+		MODER14 = "Alternate",
+		OT14 = "PushPull",
+		OSPEEDR14 = "Low",
+		PUPDR14 = "Floating",
+		AFRL14 = "7",
+		IHYSTR14 = "CMOS",
+		TR14 = "Enable",
+		SFS14 = "Disabled",
+		SFV14 = "Low"
+	;
+	/* UART3_TX is configured as RX as workaround for an hw issue on EVBE7000S */
+	out UART3_TX -> E7_163 as UART3_TX
+	IO
+		MODER15 = "Alternate",
+		OT15 = "PushPull",
+		OSPEEDR15 = "Low",
+		PUPDR15 = "Floating",
+		AFRL15 = "7",
+		IHYSTR15 = "CMOS",
+		TR15 = "Disabled",
+		SFS15 = "Disabled",
+		SFV15 = "Low"
+	;
+}
